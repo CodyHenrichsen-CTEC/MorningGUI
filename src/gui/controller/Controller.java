@@ -9,6 +9,10 @@ public class Controller
 	private DebugDuck codyDuck;
 	private DebugDuck otherDuck;
 
+	/**
+	 * Creates the Controller class and initializes the model objects for later use in the GUI.
+	 * Initializes the MorningFrame after the model components are initialized.
+	 */
 	public Controller()
 	{
 		this.codyDuck = new DebugDuck("Cody");
