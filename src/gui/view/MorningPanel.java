@@ -23,6 +23,8 @@ public class MorningPanel extends JPanel
 	private JLabel demoLabel;
 	private JButton duckButton;
 	private JLabel duckLabel;
+	
+	private SpringLayout layout;
 
 	public MorningPanel(Controller app)
 	{
@@ -33,6 +35,8 @@ public class MorningPanel extends JPanel
 		this.demoLabel = new JLabel("Results here :D");
 		this.duckButton = new JButton("Click for ducks!");
 		this.duckLabel = new JLabel("Duck status here");
+		
+		this.layout = new SpringLayout();
 
 		setupPanel();
 		setupListeners();
@@ -42,6 +46,7 @@ public class MorningPanel extends JPanel
 
 	private void setupPanel()
 	{
+		this.setLayout(layout);
 		this.setBackground(new Color(132, 3, 45));
 		this.add(demoButton);
 		this.add(demoLabel);
