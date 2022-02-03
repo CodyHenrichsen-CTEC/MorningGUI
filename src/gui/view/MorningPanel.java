@@ -37,6 +37,14 @@ public class MorningPanel extends JPanel
 		this.duckLabel = new JLabel("Duck status here");
 		
 		this.layout = new SpringLayout();
+		layout.putConstraint(SpringLayout.NORTH, duckLabel, 31, SpringLayout.SOUTH, duckButton);
+		layout.putConstraint(SpringLayout.WEST, duckLabel, 0, SpringLayout.WEST, demoLabel);
+		layout.putConstraint(SpringLayout.NORTH, duckButton, 58, SpringLayout.NORTH, this);
+		layout.putConstraint(SpringLayout.EAST, duckButton, 0, SpringLayout.EAST, demoButton);
+		layout.putConstraint(SpringLayout.NORTH, demoLabel, 24, SpringLayout.SOUTH, demoButton);
+		layout.putConstraint(SpringLayout.EAST, demoLabel, -167, SpringLayout.EAST, this);
+		layout.putConstraint(SpringLayout.SOUTH, demoButton, -100, SpringLayout.SOUTH, this);
+		layout.putConstraint(SpringLayout.EAST, demoButton, -141, SpringLayout.EAST, this);
 
 		setupPanel();
 		setupListeners();
