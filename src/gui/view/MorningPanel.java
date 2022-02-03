@@ -1,6 +1,12 @@
 package gui.view;
 
 import gui.controller.Controller;
+
+
+/*
+ * Swing imports
+ * */
+import javax.swing.SpringLayout;
 import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JLabel;
